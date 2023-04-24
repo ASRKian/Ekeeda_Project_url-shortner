@@ -1,13 +1,143 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  color: white;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 5rem;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  margin-top: 4.5rem;
+}
+
+.outerDiv {
+  padding: 3rem;
+}
+
+.mainBody {
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.heading {
+  color: rgb(89, 255, 47);
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+  width: 30%;
+  background-color: white;
+}
+
+.btnDiv {
+  border: 2px solid gray;
+  width: 25%;
+  padding: 1.2rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  color: rgb(46, 46, 247);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.urlBtn {
+  margin-right: 10px;
+}
+
+.copyBtn {
+  margin-left: 10px;
+}
+
+.shortenUrl {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.about {
+  color: aquamarine;
+  font-size: 1.5rem;
+  width: 38%;
+  margin: auto;
+  margin-bottom: 1.2rem;
+}
+
+
+
+@media screen and (max-width : 900px) {
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .about {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width : 700px) {
+
+  .header {
+    margin-top: 0px;
+    font-size: 2.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .btnDiv {
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width : 433px) {
+
+  .btn {
+  }
+
+  .about {
+  }
+
+  .text {
+    width: 80%;
+  }
+
+  .btnDiv {
+    width: 60%;
+  }
+
 }
